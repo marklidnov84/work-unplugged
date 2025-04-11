@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>WorkUnplugged - Connect with Remote Workers in Real Spaces</title>
+    <meta name="title" content="WorkUnplugged - Connect with Remote Workers in Real Spaces">
+    <meta name="description" content="Share your workspace location with remote colleagues and friends. Find your tribe, make real-life connections, and discover where fellow remote workers are working today.">
+    <meta name="keywords" content="remote work, coworking, digital nomad, workspace sharing, location sharing, remote networking">
+    <meta name="author" content="WorkUnplugged">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://work-unplugged-client.vercel.app">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://work-unplugged-client.vercel.app">
+    <meta property="og:title" content="WorkUnplugged - Connect with Remote Workers in Real Spaces">
+    <meta property="og:description" content="Share your workspace location with remote colleagues and friends. Find your tribe, make real-life connections, and discover where fellow remote workers are working today.">
+    <meta property="og:image" content="https://work-unplugged-client.vercel.app/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://work-unplugged-client.vercel.app">
+    <meta property="twitter:title" content="WorkUnplugged - Connect with Remote Workers in Real Spaces">
+    <meta property="twitter:description" content="Share your workspace location with remote colleagues and friends. Find your tribe, make real-life connections, and discover where fellow remote workers are working today.">
+    <meta property="twitter:image" content="https://work-unplugged-client.vercel.app/images/twitter-image.jpg">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#1a472a">
+    
+    <!-- Preconnect to domains -->
+    <link rel="preconnect" href="https://work-unplugged-server.vercel.app">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/src/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Mingzat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>WorkUnplugged</h1>
+            <p class="tagline">Connect with your remote tribe in real spaces</p>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Share your workspace. Find your people.</h2>
+                <p>Let your remote network know where you're working today, so they can join you for real-life connections.</p>
+                <div class="app-preview">
+                    <div class="mockup">
+                        <div class="mockup-header">
+                            <div class="status-indicator">Live Now</div>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="profile-pic"></div>
+                            <div class="profile-info">
+                                <p class="name">Alex Chen</p>
+                                <p class="location">Working at: Cafe Latte, Downtown</p>
+                                <p class="time">Until: 4:00 PM today</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mockup mockup-2">
+                        <div class="mockup-header">
+                            <div class="status-indicator">Live Now</div>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="profile-pic"></div>
+                            <div class="profile-info">
+                                <p class="name">Sarah Johnson</p>
+                                <p class="location">Working at: Central Library, 3rd Floor</p>
+                                <p class="time">Until: 5:30 PM today</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mockup mockup-3">
+                        <div class="mockup-header">
+                            <div class="status-indicator">Live Now</div>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="profile-pic"></div>
+                            <div class="profile-info">
+                                <p class="name">Miguel Reyes</p>
+                                <p class="location">Working at: Urban Coworking, West Side</p>
+                                <p class="time">Until: 3:00 PM today</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" aria-labelledby="features-heading">
+            <h2 id="features-heading" class="visually-hidden">Key Features</h2>
+            <div class="feature-item">
+                <h3>Real life connection with your remote network</h3>
+                <p>Build meaningful relationships beyond video calls</p>
+            </div>
+            <div class="feature-item">
+                <h3>Find your tribe</h3>
+                <p>Discover where your colleagues and friends are working</p>
+            </div>
+            <div class="feature-item">
+                <h3>Effortless and privacy conscious</h3>
+                <p>You control what, when and with whom you share</p>
+            </div>
+        </section>
+
+        <section class="waitlist" aria-labelledby="waitlist-heading">
+            <h2 id="waitlist-heading">Coming soon!</h2>
+            <p>Be the first to know when we launch</p>
+            <form id="waitlist-form" aria-describedby="form-message">
+                <label for="email" class="visually-hidden">Email address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Join Waitlist</button>
+            </form>
+            <p id="form-message" role="status"></p>
+        </section>
+
+        <footer>
+            <p>&copy; <span id="current-year">2023</span> WorkUnplugged. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+    
+    <!-- Update Copyright Year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "WorkUnplugged",
+      "applicationCategory": "SocialNetworkingApplication",
+      "operatingSystem": "Web",
+      "description": "An app for remote workers to share their workspace location with colleagues and friends.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "WorkUnplugged",
+      "url": "https://work-unplugged-client.vercel.app",
+      "logo": "https://work-unplugged-client.vercel.app/images/logo.png",
+      "sameAs": [
+        "https://twitter.com/WorkUnplugged",
+        "https://www.linkedin.com/company/work-unplugged"
+      ]
+    }
+    </script>
+</body>
+</html> 

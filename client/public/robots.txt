@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://work-unplugged-client.vercel.app/sitemap.xml 

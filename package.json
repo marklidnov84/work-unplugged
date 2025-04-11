@@ -1,0 +1,31 @@
+{
+  "name": "work-unplugged",
+  "version": "1.0.0",
+  "description": "WorkUnplugged - Connect remote workers in real spaces",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently --names \"SERVER,CLIENT\" --prefix-colors \"blue.bold,green.bold\" \"pnpm --filter @work-unplugged/server dev\" \"pnpm --filter @work-unplugged/client dev\"",
+    "build": "concurrently --names \"SERVER,CLIENT\" --prefix-colors \"blue.bold,green.bold\" \"pnpm --filter @work-unplugged/server build\" \"pnpm --filter @work-unplugged/client build\"",
+    "start:server": "pnpm --filter @work-unplugged/server start",
+    "start:client": "pnpm --filter @work-unplugged/client preview",
+    "deploy:server": "cd ../server && vercel",
+    "deploy:client": "cd ../client && vercel",
+    "deploy": "pnpm run deploy:server && pnpm run deploy:client",
+    "deploy:prod": "pnpm run deploy:server --prod && pnpm run deploy:client --prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "remote-work",
+    "social-platform",
+    "location-sharing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
